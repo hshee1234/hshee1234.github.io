@@ -1,0 +1,31 @@
+---
+layout: single
+title: "형성평가"
+toc: tro
+toc_sticky: true
+toc_label: "페이지 목차"
+---
+
+### 01. 3개의 터널 통과하기
+![형성평가-터널](/assets/images/형성평가-터널.jpg)
+~~~c
+#include <stdio.h>
+
+int main(void) {
+  int car=170;
+  int h1, h2, h3;
+  printf("세 터널의 높이를 차례대로 입력하세요: ");
+  scanf("%d %d %d",&h1, &h2, &h3);
+  if (h1>170 && h2>170 && h3>170)
+  printf("무사 통과");
+  else if (h1<=car)
+  printf("충돌 %d",h1);
+  else if (h2<=car)  
+  printf("충돌 %d",h2);
+  else if (h3<=car)
+  printf("충돌 %d",h3);
+  
+  return 0;
+}
+~~~
+
